@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: 2025-01-16 22:33+0100\n"
+"Last-Translator: Tobias <5702338+T0biii@users.noreply.github.com>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Cellular"
+msgstr ""
+
+msgid "Enabled"
+msgstr "Aktiviert"
+
+msgid ""
+"You can set some VPN Settings. "
+msgstr ""
+"Du kannst ein paar VPN Einstellungen einstellen"
+

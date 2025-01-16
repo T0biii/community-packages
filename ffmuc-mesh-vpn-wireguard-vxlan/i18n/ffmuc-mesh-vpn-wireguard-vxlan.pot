@@ -1,0 +1,12 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+msgid "VPN"
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid ""
+"You can set some VPN Settings. "
+msgstr ""
