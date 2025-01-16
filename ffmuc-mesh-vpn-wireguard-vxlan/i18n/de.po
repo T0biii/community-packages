@@ -21,3 +21,5 @@ msgid ""
 msgstr ""
 "Du kannst ein paar VPN Einstellungen einstellen"
 
+msgid "Loadbalancing"
+msgstr ""

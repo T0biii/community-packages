@@ -10,3 +10,6 @@ msgstr ""
 msgid ""
 "You can set some VPN Settings. "
 msgstr ""
+
+msgid "Loadbalancing"
+msgstr ""
