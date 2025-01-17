@@ -4,7 +4,7 @@ msgstr "Content-Type: text/plain; charset=UTF-8"
 msgid "VPN"
 msgstr ""
 
-msgid "Enabled"
+msgid "Preference"
 msgstr ""
 
 msgid ""
@@ -12,4 +12,13 @@ msgid ""
 msgstr ""
 
 msgid "Loadbalancing"
+msgstr ""
+
+msgid "automatic"
+msgstr ""
+
+msgid "Munich"
+msgstr ""
+
+msgid "Vienna"
 msgstr ""

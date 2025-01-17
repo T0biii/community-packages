@@ -6,31 +6,19 @@ local s = f:section(Section, nil, translate(
 	'You can set some VPN Settings. '
 ))
 
-local enabled = s:option(Flag, "enabled", translate("Enabled"))
-enabled.default = uci:get('wireguard', 'mesh_vpn') and uci:get_bool('gluon', 'mesh_vpn', 'enabled')
+local preference = s:option(ListValue, "preference", translate("Preference"))
+preference.default = uci:get('wireguard', 'mesh_vpn', 'preference') or "auto"
 
-local loadbalancing = s:option(Flag, "loadbalancing", translate("Loadbalancing"))
-loadbalancing.default = uci:get('wireguard', 'mesh_vpn') and uci:get('gluon', 'mesh_vpn', 'loadbalancing')
+preference:value('auto', translate('automatic'))
+preference:value('muc', translate('Munich'))
+preference:value('vie', translate('Vienna'))
 
 function f:write()
-	local vpn_enabled = false
-	if enabled.data then
-		vpn_enabled = true
-	end
-
-    local vpn_loadbalancing
-    if loadbalancing.data then
-        vpn_loadbalancing = true
-    else
-        vpn_loadbalancing = false
-    end
-
-	uci:section('wireguard', 'mesh_vpn', 'mesh_vpn', {
-		enabled = vpn_enabled,
-        loadbalancing = vpn_loadbalancing,
-	})
+	
+	uci:set("wireguard", "mesh_vpn", "preference", preference.data)
 
 	uci:commit('wireguard')
+
 end
 
 return f

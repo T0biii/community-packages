@@ -10,11 +10,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "Cellular"
+msgid "VPN"
 msgstr ""
 
-msgid "Enabled"
-msgstr "Aktiviert"
+msgid "Preference"
+msgstr "Präferenz"
 
 msgid ""
 "You can set some VPN Settings. "
@@ -23,3 +23,12 @@ msgstr ""
 
 msgid "Loadbalancing"
 msgstr ""
+
+msgid "automatic"
+msgstr "Automatisch"
+
+msgid "Munich"
+msgstr "München"
+
+msgid "Vienna"
+msgstr "Wien"
