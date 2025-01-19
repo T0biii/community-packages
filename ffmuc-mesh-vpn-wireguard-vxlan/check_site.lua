@@ -14,3 +14,6 @@ local loadbalancing = need_one_of({ 'mesh_vpn', 'wireguard', 'loadbalancing' },
 if loadbalancing ~= 'on' then -- peers are not required when loadbalancing is enforced
 	need_table({'mesh_vpn', 'wireguard', 'peers'}, check_peer)
 end
+ 
+-- or need_table? how does this string/table gets set?
+need_string_array({'mesh_vpn', 'wireguard', 'preference_list'})

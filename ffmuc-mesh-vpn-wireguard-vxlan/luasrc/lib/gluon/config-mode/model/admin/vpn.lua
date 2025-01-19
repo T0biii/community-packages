@@ -9,9 +9,12 @@ local s = f:section(Section, nil, translate(
 local preference = s:option(ListValue, "preference", translate("Preference"))
 preference.default = uci:get('wireguard', 'mesh_vpn', 'preference') or "auto"
 
-preference:value('auto', translate('automatic'))
-preference:value('muc', translate('Munich'))
-preference:value('vie', translate('Vienna'))
+local preference_list = uci:get_list('wireguard', 'mesh_vpn', 'preference_list')
+
+for _, preference_list_value in ipairs(preference_list) do
+	preference:value(preference_list_value)
+end
+
 
 function f:write()
 	
