@@ -26,9 +26,3 @@ msgstr ""
 
 msgid "automatic"
 msgstr "Automatisch"
-
-msgid "Munich"
-msgstr "München"
-
-msgid "Vienna"
-msgstr "Wien"
